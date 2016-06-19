@@ -1,0 +1,15 @@
+PODS:
+  - KSDeferred (0.3.1)
+  - Typhoon (3.4.8):
+    - Typhoon/no-arc (= 3.4.8)
+  - Typhoon/no-arc (3.4.8)
+
+DEPENDENCIES:
+  - KSDeferred
+  - Typhoon
+
+SPEC CHECKSUMS:
+  KSDeferred: 45c9bd1dcf4ece146ea23bd8d9605c41e19458b1
+  Typhoon: f2390ad976bd1acaf5680b837781720faf5ff909
+
+COCOAPODS: 0.39.0
