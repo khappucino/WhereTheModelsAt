@@ -13,6 +13,8 @@
 @class MostRecentQuestionsViewModel;
 @class MostViewedQuestionsViewModel;
 @class ViewController;
+@class RecentQuestionsTableView;
+@class MostViewedTextView;
 
 @interface QuestionsAssembly : TyphoonAssembly
 - (QuestionsService *)questionsService;
@@ -20,5 +22,7 @@
 - (QuestionsObservableImpl *)questionsObservableImpl;
 - (MostRecentQuestionsViewModel *)recentQuestionsViewModel;
 - (MostViewedQuestionsViewModel *)mostViewedQuestionsViewModel;
-- (ViewController *)ViewController;
+- (ViewController *)viewController;
+- (RecentQuestionsTableView *)recentQuestionsTableView;
+- (MostViewedTextView *)mostViewedTextView;
 @end

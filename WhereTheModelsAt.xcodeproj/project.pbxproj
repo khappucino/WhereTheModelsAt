@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3453CD834829D77EBE669C5E /* libPods-WhereTheModelsAt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8E856FB2B481AD9DE2EDFF /* libPods-WhereTheModelsAt.a */; };
 		F468F3001D17218100B603AE /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = F468F2FF1D17218100B603AE /* Question.m */; };
+		F468F3041D175C2E00B603AE /* RecentQuestionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F468F3031D175C2E00B603AE /* RecentQuestionsTableView.m */; };
+		F468F3071D175E8F00B603AE /* MostViewedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F468F3061D175E8F00B603AE /* MostViewedTextView.m */; };
 		F4A20B4A1D162330001943DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20B491D162330001943DF /* main.m */; };
 		F4A20B4D1D162330001943DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20B4C1D162330001943DF /* AppDelegate.m */; };
 		F4A20B501D162330001943DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20B4F1D162330001943DF /* ViewController.m */; };
@@ -29,6 +31,10 @@
 		D4C72F35B6E621AC74D73A9D /* Pods-WhereTheModelsAt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereTheModelsAt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereTheModelsAt/Pods-WhereTheModelsAt.debug.xcconfig"; sourceTree = "<group>"; };
 		F468F2FE1D17218100B603AE /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		F468F2FF1D17218100B603AE /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		F468F3021D175C2E00B603AE /* RecentQuestionsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentQuestionsTableView.h; sourceTree = "<group>"; };
+		F468F3031D175C2E00B603AE /* RecentQuestionsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentQuestionsTableView.m; sourceTree = "<group>"; };
+		F468F3051D175E8F00B603AE /* MostViewedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostViewedTextView.h; sourceTree = "<group>"; };
+		F468F3061D175E8F00B603AE /* MostViewedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostViewedTextView.m; sourceTree = "<group>"; };
 		F4A20B451D162330001943DF /* WhereTheModelsAt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereTheModelsAt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A20B491D162330001943DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4A20B4B1D162330001943DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +92,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F468F3011D175BDA00B603AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F468F3021D175C2E00B603AE /* RecentQuestionsTableView.h */,
+				F468F3031D175C2E00B603AE /* RecentQuestionsTableView.m */,
+				F468F3051D175E8F00B603AE /* MostViewedTextView.h */,
+				F468F3061D175E8F00B603AE /* MostViewedTextView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		F4A20B3C1D162330001943DF = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +130,7 @@
 				F4A20B6B1D1624D5001943DF /* Repository */,
 				F4A20B601D162380001943DF /* Models */,
 				F4A20B5F1D162367001943DF /* ViewModels */,
+				F468F3011D175BDA00B603AE /* Views */,
 				F4D6737B1D16957800564FCC /* ViewControllers */,
 				F4A20B4B1D162330001943DF /* AppDelegate.h */,
 				F4A20B4C1D162330001943DF /* AppDelegate.m */,
@@ -328,8 +346,10 @@
 				F4D673731D1637DF00564FCC /* QuestionsService.m in Sources */,
 				F4A20B4A1D162330001943DF /* main.m in Sources */,
 				F4D6737A1D16906100564FCC /* QuestionsAssembly.m in Sources */,
+				F468F3071D175E8F00B603AE /* MostViewedTextView.m in Sources */,
 				F4A20B981D162A6E001943DF /* QuestionsObservableImpl.m in Sources */,
 				F4D6736D1D162E7A00564FCC /* MostRecentQuestionsViewModel.m in Sources */,
+				F468F3041D175C2E00B603AE /* RecentQuestionsTableView.m in Sources */,
 				F468F3001D17218100B603AE /* Question.m in Sources */,
 				F4D673761D168C2300564FCC /* MostViewedQuestionsViewModel.m in Sources */,
 				F4A20B9B1D162BA0001943DF /* QuestionsModel.m in Sources */,

@@ -13,6 +13,8 @@
 #import "MostRecentQuestionsViewModel.h"
 #import "MostViewedQuestionsViewModel.h"
 #import "ViewController.h"
+#import "RecentQuestionsTableView.h"
+#import "MostViewedTextView.h"
 
 @implementation QuestionsAssembly
 
@@ -52,11 +54,25 @@
     }];
 }
 
-- (ViewController *)ViewController {
+- (RecentQuestionsTableView *)recentQuestionsTableView {
+    return [TyphoonDefinition withClass:[RecentQuestionsTableView class] configuration:^(TyphoonDefinition *definition) {
+    }];
+}
+
+- (MostViewedTextView *)mostViewedTextView {
+    return [TyphoonDefinition withClass:[MostViewedTextView class] configuration:^(TyphoonDefinition *definition) {
+    }];
+}
+
+- (ViewController *)viewController {
     return [TyphoonDefinition withClass:[ViewController class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(recentQuestionsViewModel) with:[self recentQuestionsViewModel]];
-        [definition injectProperty:@selector(mostViewedQuestionsViewModel) with:[self mostViewedQuestionsViewModel]];
         [definition injectProperty:@selector(modelRepository) with:[self modelRepository]];
+        [definition injectMethod:@selector(injectRecentViewModel:) parameters:^(TyphoonMethod *method) {
+            [method injectParameterWith:[self recentQuestionsViewModel]];
+        }];
+        [definition injectMethod:@selector(injectMostViewModel:) parameters:^(TyphoonMethod *method) {
+            [method injectParameterWith:[self mostViewedQuestionsViewModel]];
+        }];
     }];
 }
 

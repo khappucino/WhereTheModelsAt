@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MostRecentQuestionsViewModel.h"
-#import "MostViewedQuestionsViewModel.h"
+@class MostRecentQuestionsViewModel;
+@class MostViewedQuestionsViewModel;
 
-@interface ViewController : UIViewController <MostRecentQuestionsViewModelProtocol, MostViewedQuestionsViewModelProtocol>
-
+@interface ViewController : UIViewController
+- (void)injectRecentViewModel:(MostRecentQuestionsViewModel *)recentViewModel;
+- (void)injectMostViewModel:(MostViewedQuestionsViewModel *)mostViewModel;
 @end
 
